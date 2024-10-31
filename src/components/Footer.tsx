@@ -3,18 +3,24 @@ import Image from 'next/image';
 
 function Footer() {
     return (
-        <footer>
-
-            <div className='absolute w-[100%] h-[417px] left-0 top-[3635px] bg-[#2C2C2C]'>
-                {/* Logo Section */}
-                <div className='flex justify-center md:justify-start'>
+        <footer className='absolute w-[100%] h-[417px] left-0 right-0 top-[3635px] bg-[#2C2C2C]'>
 
 
-                    <Image src={"/images/Logo-footer.png"} alt='Logo' width={145} height={94} className='absolute w-[145px] h-[94px] left-[116px] top-[58px]' />
-                </div>
+
+            {/* Logo Section */}
+            <div className='flex justify-center items-center pt-[50px]'>
+                <Image src={"/images/Logo-footer.png"} 
+                alt='Logo' width={145} height={94} 
+                className='absolute w-[30px] md:w-[80px] xl:w-[145px] h-[25px] md:h-[50px] xl:h-[94px] left-auto md:left-[30px] xl:left-[116px] top-[5%] md:top-[58px]' />
+            </div>
+
+
+            {/* links */}
+            <div className='absolute w-[90%] md:w-[400px] lg:w-[500px] xl:max-w-[605px] mx-[5%] min-h-[229px] left-auto md:left-[130px] lg:left-[180px] xl:left-[360px] top-[58px] justify-center items-center flex-col'>
+
                 {/* Information Section */}
-                <div className="absolute left-1/4 right-[67.85%] top-[13.91%] bottom-[81.29%]  text-white text-center md:text-left">
-                    <ul className="font-['Roboto'] not-italic font-bold text-[16px] leading-[19px] flex flex-col gap-3">
+                <div className="absolute w-[103px] h-[20px] left-[0] text-white text-center md:text-left">
+                    <ul className="font-['Roboto'] not-italic font-bold text-[12px] md:text-[16px] leading-[19px] flex flex-col gap-[5px] md:gap-3">
                         <li className="mb-4">Information</li>
                         <li className="font-medium text-[14px] leading-[24px]">Main</li>
                         <li className="font-medium text-[14px] leading-[24px]">Gallery</li>
@@ -23,8 +29,11 @@ function Footer() {
                         <li className="font-medium text-[14px] leading-[24px]">Contacts</li>
                     </ul>
                 </div>
+
+
+
                 {/* Contacts Section */}
-                <div className="absolute left-[43.06%]  top-[13.91%] bottom-[81.29%] font-['Roboto'] not-italic text-white text-center md:text-left space-y-6 flex flex-col gap-5">
+                <div className="absolute right-0 xl:left-[260px] text-[12px] md:text-[16px] font-['Roboto'] not-italic text-white text-center md:text-left space-y-6 flex flex-col gap-[5px] md:gap-[10px] xl:gap-5">
                     <div>
                         <h3 className="font-bold mb-5">Contacts</h3>
                         <p className=" mt-2 flex  justify-center md:justify-start">
@@ -53,26 +62,30 @@ function Footer() {
                         sampleemail@gmail.com
                     </div>
                 </div>
+            </div>
 
-                {/* Social Media */}
 
-                <div className="absolute w-[193px] h-[64px] right-[212px] top-[58px]">
-                    <h1 className="absolute w-[93px] h-[19px] left-px top-px font-['Roboto'] not-italic font-bold text-[16px] leading-[19px] items-end text-[#FFFFFF]">Social Media</h1>
+            {/* Social Media */}
 
-                    <svg width="186" height="21" viewBox="0 0 186 21" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-[80%]">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.13698 18.993H2.04598V9.49903H0.000976562V6.22603H2.04598V4.26203C2.04598 1.59303 3.20098 0.00402832 6.47898 0.00402832H9.20898V3.27703H7.50398C6.22598 3.27703 6.14198 3.73503 6.14198 4.58903L6.13698 6.22603H9.22898L8.86698 9.49903H6.13698V18.993Z" fill="white" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M71.008 4.89598C70.235 5.21798 69.404 5.43298 68.533 5.53098C69.423 5.03098 70.106 4.23898 70.428 3.29698C69.594 3.75898 68.672 4.09498 67.69 4.27698C66.905 3.49098 65.784 3.00098 64.545 3.00098C62.165 3.00098 60.234 4.80998 60.234 7.03998C60.234 7.35698 60.272 7.66598 60.346 7.96098C56.764 7.79198 53.588 6.18398 51.462 3.74098C51.091 4.33798 50.879 5.03098 50.879 5.77198C50.879 7.17198 51.64 8.40998 52.796 9.13398C52.09 9.11198 51.426 8.93098 50.844 8.62798C50.844 8.64598 50.844 8.66098 50.844 8.67998C50.844 10.637 52.329 12.269 54.301 12.64C53.94 12.732 53.558 12.78 53.166 12.78C52.888 12.78 52.618 12.756 52.355 12.71C52.903 14.313 54.495 15.482 56.381 15.515C54.906 16.598 53.048 17.243 51.028 17.243C50.68 17.243 50.337 17.224 50 17.187C51.907 18.332 54.173 19.002 56.607 19.002C64.535 19.002 68.87 12.846 68.87 7.50898C68.87 7.33298 68.865 7.15998 68.857 6.98598C69.699 6.41598 70.43 5.70498 71.008 4.89598Z" fill="white" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M130.512 20.013H113.488C112.672 20.013 112.011 19.434 112.011 18.72V3.28199C112.011 2.56899 112.672 1.98999 113.488 1.98999H130.512C131.327 1.98999 131.988 2.56899 131.988 3.28199V18.72C131.988 19.434 131.327 20.013 130.512 20.013ZM115.473 17.044H118.415V8.90699H115.473V17.044ZM116.964 4.98499C115.957 4.98499 115.3 5.59199 115.3 6.39099C115.3 7.17099 115.938 7.79699 116.925 7.79699H116.944C117.97 7.79699 118.608 7.17099 118.608 6.39099C118.59 5.59199 117.97 4.98499 116.964 4.98499ZM129.023 12.379C129.023 9.87899 127.571 8.71599 125.636 8.71599C124.074 8.71599 123.376 9.50499 122.985 10.06V8.90699H120.043C120.082 9.67099 120.043 17.044 120.043 17.044H122.985V12.5C122.985 12.258 123.004 12.014 123.082 11.841C123.294 11.355 123.779 10.852 124.591 10.852C125.656 10.852 126.081 11.598 126.081 12.692V17.044H129.023V12.379ZM122.965 10.087C122.971 10.078 122.979 10.069 122.985 10.06V10.087H122.965Z" fill="white" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M179.424 2C174.489 2 172.001 5.522 172.001 8.46C172.001 10.238 172.677 11.82 174.128 12.41C174.366 12.507 174.579 12.413 174.648 12.151C174.696 11.97 174.81 11.512 174.86 11.321C174.93 11.062 174.903 10.971 174.711 10.745C174.292 10.254 174.025 9.618 174.025 8.717C174.025 6.104 175.989 3.765 179.139 3.765C181.928 3.765 183.46 5.462 183.46 7.727C183.46 10.709 182.135 13.225 180.167 13.225C179.081 13.225 178.268 12.33 178.528 11.233C178.841 9.924 179.445 8.51 179.445 7.564C179.445 6.718 178.989 6.012 178.044 6.012C176.934 6.012 176.042 7.156 176.042 8.688C176.042 9.665 176.373 10.325 176.373 10.325C176.373 10.325 175.236 15.119 175.037 15.959C174.64 17.631 174.978 19.681 175.006 19.889C175.023 20.011 175.181 20.04 175.253 19.948C175.355 19.814 176.678 18.189 177.128 16.564C177.255 16.104 177.858 13.722 177.858 13.722C178.219 14.407 179.274 15.011 180.395 15.011C183.734 15.011 185.999 11.98 185.999 7.924C185.999 4.857 183.39 2 179.424 2Z" fill="white" />
-                    </svg>
+            <div className="absolute w-full md:max-w-[193px] max-h-[64px] left-auto md:left-[70%] lg:left-[80%] xl:left-[1035px] top-[250px] md:top-[58px] flex items-center justify-center">
+                <h1 className="absolute w-[93px] max-h-[19px] left-auto md:left-[1px] top-[1px] font-['Roboto'] not-italic font-bold text-[12px] md:text-[16px] leading-[19px] items-end text-[#FFFFFF]">Social Media</h1>
 
-                </div>
-                <div className='flex text-center items-center justify-center '>
-                    <hr className="absolute w-[100%] h-0 left-0 bottom-[70px] mix-blend-normal opacity-10 border-[1px] border-[solid] border-[#FFFFFF]" />
-                    <p className="absolute w-[150px] h-[22px] bottom-[24px] font-['Open_Sans'] not-italic font-normal text-[12px] leading-[22px] text-center text-[rgba(200,_200,_200,_0.5)]">© 2021 All Rights Reserved</p>
-                </div>
+                <svg width="186" height="21" viewBox="0 0 186 21" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-auto md:left-[1px] top-[43px] justify-center">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.13698 18.993H2.04598V9.49903H0.000976562V6.22603H2.04598V4.26203C2.04598 1.59303 3.20098 0.00402832 6.47898 0.00402832H9.20898V3.27703H7.50398C6.22598 3.27703 6.14198 3.73503 6.14198 4.58903L6.13698 6.22603H9.22898L8.86698 9.49903H6.13698V18.993Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M71.008 4.89598C70.235 5.21798 69.404 5.43298 68.533 5.53098C69.423 5.03098 70.106 4.23898 70.428 3.29698C69.594 3.75898 68.672 4.09498 67.69 4.27698C66.905 3.49098 65.784 3.00098 64.545 3.00098C62.165 3.00098 60.234 4.80998 60.234 7.03998C60.234 7.35698 60.272 7.66598 60.346 7.96098C56.764 7.79198 53.588 6.18398 51.462 3.74098C51.091 4.33798 50.879 5.03098 50.879 5.77198C50.879 7.17198 51.64 8.40998 52.796 9.13398C52.09 9.11198 51.426 8.93098 50.844 8.62798C50.844 8.64598 50.844 8.66098 50.844 8.67998C50.844 10.637 52.329 12.269 54.301 12.64C53.94 12.732 53.558 12.78 53.166 12.78C52.888 12.78 52.618 12.756 52.355 12.71C52.903 14.313 54.495 15.482 56.381 15.515C54.906 16.598 53.048 17.243 51.028 17.243C50.68 17.243 50.337 17.224 50 17.187C51.907 18.332 54.173 19.002 56.607 19.002C64.535 19.002 68.87 12.846 68.87 7.50898C68.87 7.33298 68.865 7.15998 68.857 6.98598C69.699 6.41598 70.43 5.70498 71.008 4.89598Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M130.512 20.013H113.488C112.672 20.013 112.011 19.434 112.011 18.72V3.28199C112.011 2.56899 112.672 1.98999 113.488 1.98999H130.512C131.327 1.98999 131.988 2.56899 131.988 3.28199V18.72C131.988 19.434 131.327 20.013 130.512 20.013ZM115.473 17.044H118.415V8.90699H115.473V17.044ZM116.964 4.98499C115.957 4.98499 115.3 5.59199 115.3 6.39099C115.3 7.17099 115.938 7.79699 116.925 7.79699H116.944C117.97 7.79699 118.608 7.17099 118.608 6.39099C118.59 5.59199 117.97 4.98499 116.964 4.98499ZM129.023 12.379C129.023 9.87899 127.571 8.71599 125.636 8.71599C124.074 8.71599 123.376 9.50499 122.985 10.06V8.90699H120.043C120.082 9.67099 120.043 17.044 120.043 17.044H122.985V12.5C122.985 12.258 123.004 12.014 123.082 11.841C123.294 11.355 123.779 10.852 124.591 10.852C125.656 10.852 126.081 11.598 126.081 12.692V17.044H129.023V12.379ZM122.965 10.087C122.971 10.078 122.979 10.069 122.985 10.06V10.087H122.965Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M179.424 2C174.489 2 172.001 5.522 172.001 8.46C172.001 10.238 172.677 11.82 174.128 12.41C174.366 12.507 174.579 12.413 174.648 12.151C174.696 11.97 174.81 11.512 174.86 11.321C174.93 11.062 174.903 10.971 174.711 10.745C174.292 10.254 174.025 9.618 174.025 8.717C174.025 6.104 175.989 3.765 179.139 3.765C181.928 3.765 183.46 5.462 183.46 7.727C183.46 10.709 182.135 13.225 180.167 13.225C179.081 13.225 178.268 12.33 178.528 11.233C178.841 9.924 179.445 8.51 179.445 7.564C179.445 6.718 178.989 6.012 178.044 6.012C176.934 6.012 176.042 7.156 176.042 8.688C176.042 9.665 176.373 10.325 176.373 10.325C176.373 10.325 175.236 15.119 175.037 15.959C174.64 17.631 174.978 19.681 175.006 19.889C175.023 20.011 175.181 20.04 175.253 19.948C175.355 19.814 176.678 18.189 177.128 16.564C177.255 16.104 177.858 13.722 177.858 13.722C178.219 14.407 179.274 15.011 180.395 15.011C183.734 15.011 185.999 11.98 185.999 7.924C185.999 4.857 183.39 2 179.424 2Z" fill="white" />
+                </svg>
 
             </div>
+
+
+            {/* copy right */}
+            <div className='flex text-center items-center justify-center '>
+                <hr className="absolute w-full h-0 left-0 top-[347px] mix-blend-normal opacity-10 border-[1px] border-[solid] border-[#FFFFFF]" />
+                <p className="absolute h-[22px] xl:left-[645px] top-[373px] font-['Open_Sans'] not-italic font-normal text-[12px] leading-[22px] text-center text-[rgba(200,_200,_200,_0.5)]">© 2021 All Rights Reserved</p>
+            </div>
+
 
         </footer >
     )
