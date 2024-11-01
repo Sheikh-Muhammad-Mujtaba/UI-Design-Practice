@@ -193,7 +193,7 @@ export default function Home() {
       </div>
 
       {/* Contact section */}
-      <div className="relative w-[80%] sm:w-[100%] top-[320vh] xs:top-[350vh] sm:top-[2950px] lg:top-[2312px] xl:top-[2912px] justify-center">
+      <div className="relative w-[80%] sm:w-[100%] top-[1600px] xs:top-[1700px] sm:top-[2950px] lg:top-[2312px] xl:top-[2912px] justify-center">
         <h1 className="relative w-[312px] h-[64px] left-[5vw] md:left-[135px] font-['Roboto'] not-italic font-light text-[40px] md:text-[64px] leading-[64px] text-[#BDBDBD]">Contact Us</h1>
         <div className="relative top-[22px] flex flex-row gap-[120px]">
         <div className="relative flex flex-col w-full sm:w-[392px] left-[5vw] md:left-[135px] gap-[10px] ">

@@ -13,7 +13,7 @@ function Header() {
   };
 
   return (
-    <header className='absolute right-0 w-full  h-[10%] lg:h-[102px] px-4 flex items-center justify-between '>
+    <header className='absolute right-0 w-full  h-[10%] lg:h-[102px] px-4 flex items-center justify-between z-[1]'>
       {/* Logo */}
       <Image
         src={"/images/header-logo.png"}

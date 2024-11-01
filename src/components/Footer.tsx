@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Footer() {
     return (
-        <footer className='relative w-[100%] h-[417px] left-0 right-0 top-[1524px] xs:top-[1824px] sm:top-[2824px] lg:top-[2135px] xl:top-[2835px] bg-[#2C2C2C]'>
+        <footer className='relative w-[100%] h-[417px] left-0 right-0 top-[1524px] xs:top-[1624px] sm:top-[2824px] lg:top-[2135px] xl:top-[2835px] bg-[#2C2C2C]'>
 
 
 
