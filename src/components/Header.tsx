@@ -33,13 +33,13 @@ function Header() {
             <Link href={'#'}>Gallery</Link>
           </li>
           <li className='w-[76px] border-t-2 border-b-2 text-center border-transparent hover:border-[#333333] p-[3.89px]'>
-            <Link href={'#'}>Projects</Link>
+            <Link href={'#projects'}>Projects</Link>
           </li>
           <li className='w-[123px] border-t-2 border-b-2 text-center border-transparent hover:border-[#333333] p-[3.89px]'>
             <Link href={'#'}>Certifications</Link>
           </li>
           <li className='w-[79px] border-t-2 border-b-2 text-center border-transparent hover:border-[#333333] p-[3.89px]'>
-            <Link href={'#'}>Contacts</Link>
+            <Link href={'#contact'}>Contacts</Link>
           </li>
         </ul>
       </nav>
