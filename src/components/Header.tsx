@@ -64,13 +64,13 @@ function Header() {
               <Link href={'#'} onClick={toggleMenu}>Gallery</Link>
             </li>
             <li>
-              <Link href={'#'} onClick={toggleMenu}>Projects</Link>
+              <Link href={'#projects'} onClick={toggleMenu}>Projects</Link>
             </li>
             <li>
               <Link href={'#'} onClick={toggleMenu}>Certifications</Link>
             </li>
             <li>
-              <Link href={'#'} onClick={toggleMenu}>Contacts</Link>
+              <Link href={'#contact'} onClick={toggleMenu}>Contacts</Link>
             </li>
           </ul>
         </nav>
