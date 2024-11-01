@@ -3,14 +3,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col">
-      <div className="w-[100%] overflow-hidden mx-auto px-4 items-center justify-center">
-        {/* Hero sevtion */}
+    <div className="relative flex flex-col h-auto">
+      {/* Hero section */}
+      <div className="relative sm:absolute w-[100%] min-h-fit  mx-auto px-4 items-center justify-center">
+        
         <div>
-          <h1 className="absolute w-fit sm:w-[70vw] md:w-[277.76px] h-[64px] left-[22%] sm:left-[5%] md:left-[135px] top-[80px] sm:top-[20vh] md:top-[150px] xl:top-[438px] text-[#BDBDBD] font-['Roboto'] font-light text-[8vw] md:text-[64px] leading-[1]">
+          <h1 className="relative sm:absolute w-fit sm:w-[70vw] md:w-[277.76px] h-[64px] left-[18%] sm:left-[5%] md:left-[135px] top-[80px] sm:top-[20vh] md:top-[150px] xl:top-[438px] text-[#BDBDBD] font-['Roboto'] font-light text-[8vw] md:text-[64px] leading-[1]">
             PROJECT
           </h1>
-          <h2 className="absolute w-fit sm:w-[70vw] md:w-[186px] h-[64px] left-[56%] sm:left-[15%] md:left-[135px] top-[70px] sm:top-[26vh] md:top-[200px] xl:top-[502px] text-[#333333] font-['Roboto'] font-bold text-[8vw] md:text-[64px] leading-[2]">
+          <h2 className="relative sm:absolute w-fit sm:w-[70vw] md:w-[186px] h-[64px] left-[56%] sm:left-[15%] md:left-[135px] top-[10px] sm:top-[26vh] md:top-[200px] xl:top-[502px] text-[#333333] font-['Roboto'] font-bold text-[8vw] md:text-[64px] leading-[2]">
             Lorum
           </h2>
           <div className="hidden sm:flex">
@@ -38,7 +39,7 @@ export default function Home() {
           </div>
         </div>
         {/* hero image */}
-        <div className="absolute sm:min-w-[40%] md:max-w-[40%] xl:max-w-[770px] max-h-[829px] left-0 sm:left-[300px] md:left-[535px] top-[150px] sm:top-[105px] ">
+        <div className="relative sm:absolute sm:min-w-[40%] md:max-w-[40%] xl:max-w-[770px] max-h-[829px] left-0 sm:left-[300px] md:left-[535px] top-[10vw] sm:top-[105px] ">
           <Image
             src={"/images/Rectangle-6.png"}
             alt="Building Image"
@@ -77,33 +78,33 @@ export default function Home() {
 
       {/* About Section */}
       <div className="relative">
-        <div className="absolute w-[80%] lg:max-w-[1170px] h-[435px] left-[10vw] xl:left-[135px] top-[800px] sm:top-[120vh] xl:top-[1054px] bg-[#FBFBFB]"></div>
+        <div className="absolute w-[80%] lg:max-w-[1170px] h-[60vh] sm:h-[435px] left-[10vw] xl:left-[135px] top-[15vw] sm:top-[120vh] xl:top-[1054px] bg-[#FBFBFB]"></div>
         <Image
           src={"/images/Rectangle-8.png"}
           alt="Image"
           width={270}
           height={265}
-          className="absolute w-[20vw] xl:max-w-[270px] max-h-[265px] left-[12vw] xl:left-[235px] top-[125vh] xl:top-[1084px]"
+          className="absolute w-[20vw] xl:max-w-[270px] max-h-[265px] left-[12vw] xl:left-[235px] top-[125vh] xl:top-[1084px] hidden sm:flex"
         />
         <Image
           src={"/images/Rectangle-9.png"}
           alt="Image"
           width={270}
           height={345}
-          className="absolute w-[20vw] xl:max-w-[270px] max-h-[345px] left-[35vw] xl:left-[535px] top-[125vh] xl:top-[1114px] "
+          className="absolute w-[20vw] xl:max-w-[270px] max-h-[345px] left-[35vw] xl:left-[535px] top-[125vh] xl:top-[1114px] hidden sm:flex "
         />
         <Image
           src={"/images/Rectangle-10.png"}
           alt="Image"
           width={270}
           height={140}
-          className="absolute w-[20vw] xl:max-w-[270px] max-h-[140px] left-[12vw] xl:left-[235px] top-[165vh] xl:top-[1379px] "
+          className="absolute w-[20vw] xl:max-w-[270px] max-h-[140px] left-[12vw] xl:left-[235px] top-[165vh] xl:top-[1379px] hidden sm:flex "
         />
 
-        <h1 className="absolute w-[168px] h-[64px] left-[5vw] sm:left-[60vw] xl:left-[835px] top-[120vh] sm:top-[125vh] xl:top-[1084px] font-['Roboto'] not-italic font-light text-[40px] md:text-[50px] xl:text-[64px] leading-[64px] text-[#BDBDBD]">
+        <h1 className="relative sm:absolute w-[168px] h-[64px] left-[15vw] sm:left-[60vw] xl:left-[835px] top-[20vw] sm:top-[125vh] xl:top-[1084px] font-['Roboto'] not-italic font-light text-[40px] md:text-[50px] xl:text-[64px] leading-[64px] text-[#BDBDBD]">
           About
         </h1>
-        <p className="absolute w-[80%] sm:w-[25vw] xl:w-[400px] h-[200px] left-[5vw] sm:left-[60vw] xl:left-[835px] top-[130vh] sm:top-[140vh] xl:top-[1168px] font-['Roboto'] not-italic font-light text-[10px] md:text-[14px] xl:text-[16px] leading-[20px] xl:leading-[25px] text-[#000000]">
+        <p className="relative sm:absolute w-[70%] sm:w-[25vw] xl:w-[400px] h-fit sm:h-[200px] left-[15vw] sm:left-[60vw] xl:left-[835px] top-[20vw] sm:top-[140vh] xl:top-[1168px] font-['Roboto'] not-italic font-light text-[10px] md:text-[14px] xl:text-[16px] leading-[20px] xl:leading-[25px] text-[#000000]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry&apos;s standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
@@ -111,7 +112,7 @@ export default function Home() {
           only five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged.
         </p>
-        <button className="absolute w-[20vw] xl:w-[222px] h-[10vh] xl:h-[71px] left-[60vw] xl:left-[835px] top-[190vh] xl:top-[1388px] bg-[#FFFFFF] text-center items-center justify-center text-[#333333] font-['Roboto'] not-italic font-normal text-[10px] xl:text-[12px] leading-[12px] uppercase flex flex-col">
+        <button className="relative sm:absolute w-[150px] sm:w-[20vw] xl:w-[222px] h-[10vh] xl:h-[71px] left-[15vw] sm:left-[60vw] xl:left-[835px] top-[25vw] sm:top-[190vh] xl:top-[1388px] bg-[#FFFFFF] text-center items-center justify-center text-[#333333] font-['Roboto'] not-italic font-normal text-[10px] xl:text-[12px] leading-[12px] uppercase flex flex-col">
           Read More
           <svg
             width="24"
@@ -119,7 +120,7 @@ export default function Home() {
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[12vw] xl:left-[134px] top[24px] ml-[16px] xl:ml-[16px]"
+            className="absolute right-[1vw] sm:left-[12vw] xl:left-[134px] top[24px] ml-[20px] sm:ml-[16px]"
           >
             <path
               fill-rule="evenodd"
@@ -137,29 +138,36 @@ export default function Home() {
         </button>
       </div>
       {/* Main Focus */}
-      {/* <div>
-        <h1 className="absolute w-[881px] h-[64px] left-[135px] top-[1639px] font-['Roboto'] not-italic font-light text-[64px] leading-[64px] text-[#BDBDBD]">
+      <div className="relative w-[90%] xl:w-full flex justify-center">
+        <h1 className="relative sm:absolute sm:w-[80%] xl:w-[881px] h-[64px] left-[17vw] sm:left-[135px] top-[45vw] sm:top-[1150px] xl:top-[1639px] font-['Roboto'] not-italic font-light text-[25px] sm:text-[40px] xl:text-[64px] leading-[25px] sm:leading-[64px] text-[#BDBDBD]">
           Main Focus/Mission Statement
         </h1>
-        <div>
-          <h2 className="absolute w-[104px] h-[140px] left-[135px] top-[1765px] font-['Roboto'] not-italic font-black text-[200px] leading-[234px] flex items-center text-[#F2F2F2]">1</h2>
-          <p className="absolute w-[279px] h-[144px] left-[269px] top-[1763px] font-['Roboto'] not-italic font-normal text-[22px] leading-[36px] text-[#333333]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.</p>
-          <h2 className="absolute w-[120px] h-[140px] left-[735px] top-[1765px] font-['Roboto'] not-italic font-black text-[200px] leading-[234px] flex items-center text-[#F2F2F2]">2</h2>
-          <p className="absolute w-[420px] h-[144px] left-[885px] top-[1763px] font-['Roboto'] not-italic font-normal text-[22px] leading-[36px] text-[#333333]">
+        <div className="flex flex-wrap w-[70%] xl:w-full justify-between">
+          <div className="relative flex left-[-20vw] sm:left-0 xl:absolute">
+          <h2 className="relative xl:absolute w-[15vw] sm:w-[104px] h-[140px] xl:left-[135px] top-[63vw] sm:top-[1250px] xl:top-[1765px] font-['Roboto'] not-italic font-black text-[90px] sm:text-[170px] xl:text-[200px] leading-[234px] flex items-center text-[#F2F2F2]">1</h2>
+          <p className="relative xl:absolute w-[45vw] sm:w-[300px] xl:w-[279px] h-[144px] xl:left-[269px] top-[70vw] sm:top-[1248px] xl:top-[1763px] font-['Roboto'] not-italic font-normal text-[12px] sm:text-[18px] xl:text-[22px] leading-[20px] sm:leading-[36px] text-[#333333]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.</p>
+          </div>
+          <div className="relative flex left-[-20vw] sm:left-0 xl:absolute">
+          <h2 className="relative xl:absolute w-[15vw] sm:w-[120px] h-[140px] xl:left-[735px] top-[55vw] sm:top-[1250px] xl:top-[1765px] font-['Roboto'] not-italic font-black text-[90px] sm:text-[170px] xl:text-[200px] leading-[234px] flex items-center text-[#F2F2F2]">2</h2>
+          <p className="relative xl:absolute w-[45vw] sm:w-[300px] xl:w-[420px] h-[144px] xl:left-[885px] top-[60vw] sm:top-[1248px] xl:top-[1763px] font-['Roboto'] not-italic font-normal text-[12px] sm:text-[18px] xl:text-[22px] leading-[20px] sm:leading-[36px] text-[#333333]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat, magna mauris porttitor tortor, a auctor est felis ut nisl.          </p>
-
+            </div>
         </div>
 
-      </div> */}
+      </div>
+
+
+
       {/* Projects Seection  */}
-      {/* <div className="max-w-[1440px]">
-        <h1 className="absolute w-[346px] h-[64px] left-[135px] top-[2027px] font-['Roboto'] not-italic font-light text-[40px] md:text-[64px] leading-[64px] text-[#BDBDBD]">Our Projects</h1>
-        <div className="max-w-[570px]">
-          <Image src={"/images/Rectangle-12.png"} alt="Project Image-1" width={570} height={255} className="absolute w-[570px] h-[255px] left-[135px] top-[2151px]" />
-          <span className="absolute w-[570px] h-[255px] left-[135px] top-[2151px] bg-[#333333] opacity-80" />
-          <h2 className="absolute w-[233px] h-[128px] left-[214px] top-[2199px] font-['Roboto'] not-italic font-bold text-[64px] leading-[64px] text-[#FFFFFF]">Sample
+      <div className="relative max-w-[1440px] flex justify-center">
+        <h1 className="relative sm:absolute w-[346px] h-[64px] left-[135px] top-[1300px] xl:top-[2027px] font-['Roboto'] not-italic font-light text-[40px] md:text-[64px] leading-[64px] text-[#BDBDBD]">Our Projects</h1>
+        <div className="absolute w-[95%] xl:w-full flex flex-row flex-wrap gap-[30px] top-[1400px] xl:top-[2151px] justify-center">
+        <div className="relative w-full lg:max-w-[570px]">
+          <Image src={"/images/Rectangle-12.png"} alt="Project Image-1" width={570} height={255} className="w-full lg:max-w-[570px] max-h-[255px]" />
+          <span className="absolute top-0 w-full lg:w-[570px] h-[255px] bg-[#333333] opacity-80" />
+          <h2 className="absolute w-[233px] h-[128px] left-[79px] top-[48px] font-['Roboto'] not-italic font-bold text-[64px] leading-[64px] text-[#FFFFFF]">Sample
             Project</h2>
-          <button className="absolute w-[129px] h-[24px] left-[214px] top-[2335px] flex text-[#FFFFFF]">
+          <button className="absolute w-[129px] h-[24px] left-[79px] top-[190px] flex text-[#FFFFFF]">
             View More
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute w-[24px] h-[24px] left-[85px]">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.5C3 11.2239 3.22386 11 3.5 11L19.5 11C19.7761 11 20 11.2239 20 11.5C20 11.7761 19.7761 12 19.5 12L3.5 12C3.22386 12 3 11.7761 3 11.5Z" fill="white" />
@@ -169,19 +177,19 @@ export default function Home() {
           </button>
         </div>
 
-        <Image src={"/images/image-15.png"} alt="Project Image" width={570} height={255} className="absolute w-[570px] h-[255px] left-[735px] top-[2151px]" />
-        <Image src={"/images/image-16.png"} alt="Project Image" width={270} height={255} className="absolute w-[270px] h-[255px] left-[135px] top-[2436px]" />
-        <Image src={"/images/image-17.png"} alt="Project Image" width={470} height={255} className="absolute w-[470px] h-[255px] left-[435px] top-[2436px]" />
-        <Image src={"/images/image-18.png"} alt="Project Image" width={370} height={255} className="absolute w-[370px] h-[255px] left-[935px] top-[2436px]" />
-
-        <button className="absolute w-[221.81px] h-[71px] left-[1083px] top-[2721px] bg-[#333333] text-[#ffffff] flex justify-center items-center">All Projects
+        <Image src={"/images/image-15.png"} alt="Project Image" width={570} height={255} className="relative w-full lg:max-w-[570px]" />
+        <Image src={"/images/image-16.png"} alt="Project Image" width={270} height={255} className="relative w-full lg:max-w-[270px]" />
+        <Image src={"/images/image-17.png"} alt="Project Image" width={470} height={255} className="relative w-full lg:max-w-[470px]" />
+        <Image src={"/images/image-18.png"} alt="Project Image" width={370} height={255} className="relative w-full lg:max-w-[370px]" />
+        </div>
+        <button className="absolute w-[221.81px] h-[71px] left-[70px] xl:left-[1083px] top-[2500px] xl:top-[2721px] bg-[#333333] text-[#ffffff] flex justify-center items-center">All Projects
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="white" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6464 7.6462C15.8417 7.45094 16.1583 7.45094 16.3536 7.6462L20.2071 11.4998L16.3536 15.3533C16.1583 15.5486 15.8417 15.5486 15.6464 15.3533C15.4512 15.158 15.4512 14.8415 15.6464 14.6462L18.7929 11.4998L15.6464 8.35331C15.4512 8.15805 15.4512 7.84146 15.6464 7.6462Z" fill="white" />
           </svg>
 
         </button>
-      </div> */}
+      </div>
 
 {/* Contact section */}
       {/* <div  className="max-w-[1440px]">
